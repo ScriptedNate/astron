@@ -38,4 +38,4 @@ bot.on("message", async message => {
   if(commandfile) commandfile.run(bot,message,args);
 });
 
-bot.login("NTgyMDkxMDg4MjYxNjc3MDU2.XOow9Q.A4cooz3JB9qPAii6rRXqYh9JYgE");
+bot.login("process.env.file");
