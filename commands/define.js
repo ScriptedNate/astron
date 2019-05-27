@@ -24,7 +24,7 @@ if (res.tags.length > 0 && res.tags.join(', ').length < 1024) {
 }
 
 message.channel.send(embed);
-message.delete().catch(console.error);
+
 }
 
 module.exports.help = {
