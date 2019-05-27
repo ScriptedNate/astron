@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
   .setDescription(cmd[1])
 
   message.channel.send(emb)
-  message.delete().catch(console.error);
+  
 
 };
 
