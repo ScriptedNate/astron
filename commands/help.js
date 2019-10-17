@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("**.uptime**", "Shows uptime for bot")
     .addField("**.info**", "Shows information about the bot")
     .addField("**.rps**", "Rock!, Paper!, Scissors!")
-    .setFooter("Astron created by by @astrovibes#8096");
+    .setFooter("Astron created by by @nate#6747");
 
     message.channel.send(botembed);
 }
