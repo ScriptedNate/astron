@@ -16,5 +16,5 @@ message.channel.send({embed: sEmbed});
 }
 
 module.exports.help = {
-    name: "slots"
+    name: "serverlist"
 }
