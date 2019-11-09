@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  const adminrole = message.guild.roles.find(r => r.name === "Developer");
+  const adminrole = message.guild.roles.find(r => r.name === "Moderator");
   let announceChannel = message.mentions.channels.first();
   if (!message.member.roles.has(adminrole.id)) return message.reply("you are not allowed to use this command.");
   if (!announceChannel) return message.reply("please specify a channel to send the announcement.");
@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   const embed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setDescription(text)
-    .setFooter('Announcement by the Development Team')
+    .setFooter('Announcement by the Administration Team')
     .setTimestamp();
   announceChannel.send(embed);
   message.delete().catch(console.error);
