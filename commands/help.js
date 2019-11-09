@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("**.rps**", "Rock!, Paper!, Scissors!")
     .addField("**.slots**", "Bingo!!!")
     .addField("**.serverlist**", "Shows how many servers have the bot")
-    .setFooter("Astron created by by @nate#6747"");
+    .setFooter("Astron created by by @nate#6747");
 
     message.channel.send(botembed);
 }
